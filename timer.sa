@@ -1,0 +1,23 @@
+// timer.sa — QPM package
+//
+// Usage: import starttimer, endtimer
+//
+//   import starttimer, endtimer
+//
+//   starttimer()
+//   ... your program ...
+//   endtimer()
+//
+// Prints how long the code between the two calls took to run.
+
+let _timer_start = 0;
+
+function starttimer() {
+    _timer_start = time();
+}
+
+function endtimer() {
+    let _timer_end = time();
+    let _elapsed = _timer_end - _timer_start;
+    print("Execution time:", _elapsed, "seconds");
+}

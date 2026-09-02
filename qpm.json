@@ -1,0 +1,8 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "Adds starttimer() and endtimer() to measure how long a .sa program takes to run.",
+  "main": "timer.sa",
+  "author": "TeamUranus",
+  "tags": ["utility", "profiling", "timer"]
+}
