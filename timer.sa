@@ -1,8 +1,8 @@
 // timer.sa — QPM package
 //
-// Usage: import starttimer, endtimer
+// Usage: from timer import starttimer, endtimer
 //
-//   import starttimer, endtimer
+//   from timer import starttimer, endtimer
 //
 //   starttimer()
 //   ... your program ...
@@ -12,11 +12,11 @@
 
 let _timer_start = 0;
 
-function starttimer() {
+export function starttimer() {
     _timer_start = time();
 }
 
-function endtimer() {
+export function endtimer() {
     let _timer_end = time();
     let _elapsed = _timer_end - _timer_start;
     print("Execution time:", _elapsed, "seconds");
