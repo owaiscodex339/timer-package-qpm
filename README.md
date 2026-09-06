@@ -37,7 +37,7 @@ Just wrap whatever you want to measure between the two calls.
 ## Example
 
 ```
-import starttimer, endtimer
+from timer import starttimer, endtimer
 
 starttimer()
 
