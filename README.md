@@ -13,7 +13,7 @@ qpm install timer
 ## Usage
 
 ```
-import starttimer, endtimer
+from timer import starttimer, endtimer
 
 starttimer()
 
